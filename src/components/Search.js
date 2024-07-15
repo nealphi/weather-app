@@ -8,7 +8,7 @@ const Search = ({ onSearchChange }) => {
 
   const loadOptions = (inputValue) => {
     return fetch(
-      `${GEO_API_URL}/cities?units=metric&namePrefix=${inputValue}`,
+      `${GEO_API_URL}/cities?minPopulation=1000000&units=metric&namePrefix=${inputValue}`,
       geoApiOptions
     )
       .then((response) => response.json())
@@ -38,6 +38,7 @@ const Search = ({ onSearchChange }) => {
         value={search}
         onChange={handleOnChange}
         loadOptions={loadOptions}
+        opt
       />
     </Box>
   );

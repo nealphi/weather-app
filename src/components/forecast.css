@@ -28,11 +28,14 @@
 }
 
 .description {
-  font-size: 12px;
+  font-size: 15px;  
   cursor: inherit;
-  flex: 1 1;
-  margin-right: 15px;
+  font-weight: bold;  
   text-align: left;
+  padding: 10px 15px 5px 15px;
+  color: #616161;
+
+
 }
 
 .min-max {

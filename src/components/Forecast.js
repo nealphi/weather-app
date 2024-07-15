@@ -24,14 +24,16 @@ const Forecast = ({ data }) => {
               <AccordionItemButton>
                 <div className="daily-item">
                   <img src={`icons/${item.weather[0].icon}.png`} className="icon-small" alt="weather" />
-                  <label className="day">{forecastDays[idx].slice(0,3)}</label>
-                  <label className="description">{item.weather[0].description}</label>
+                  <label className="day">{forecastDays[idx]}</label>
                   <label className="min-max">{Math.round(item.main.temp_max)}°/{Math.round(item.main.temp_min)}°</label>
                 </div>
               </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
+            <div className="description">{item.weather[0].description}</div>
               <div className="daily-details-grid">
+             
+
                 <div className="daily-details-grid-item">
                   <label>Pressure:</label>
                   <label>{item.main.pressure}</label>

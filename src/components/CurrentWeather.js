@@ -8,7 +8,6 @@ const CurrentWeather = ({ data }) => {
       justifyContent={"center"}
       textAlign={"center"}
       color={"white"}
-      // color={data.weather[0].icon.includes("n") ? "white" : "black"}
       bg={"transparent"}
     >
       <Text m={1} fontSize={24}>
@@ -25,27 +24,7 @@ const CurrentWeather = ({ data }) => {
       <Text m={2}>
         H:{Math.round(data.main.temp_max)}° L:{Math.round(data.main.temp_min)}°
       </Text>
-     
     </Flex>
-
-    //       <div className="parameter-row">
-    //         <span className="parameter-label">Feels like</span>
-    //         <span className="parameter-value">
-    //           {Math.round(data.main.feels_like)}°C
-    //         </span>
-    //       </div>
-    //       <div className="parameter-row">
-    //         <span className="parameter-label">Wind</span>
-    //         <span className="parameter-value">{data.wind.speed} m/s</span>
-    //       </div>
-    //       <div className="parameter-row">
-    //         <span className="parameter-label">Humidity</span>
-    //         <span className="parameter-value">{data.main.humidity}%</span>
-    //       </div>
-
-    //     </div>
-    //   </div>
-    // </div>
   );
 };
 

@@ -48,6 +48,7 @@ function App() {
 
       <Box
         className="Weather"
+
         bgColor={
           currentWeather && currentWeather.weather[0].icon.includes("n")
             ? "#191D26"

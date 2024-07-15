@@ -3,7 +3,11 @@ import Spline from "@splinetool/react-spline";
 import React from "react";
 
 const SplineIcon = ({ url }) => {
-  return <Spline scene={url} width={300} height={300} />;
+  return (
+    <Flex mt={40}>
+      <Spline scene={url} width={300} height={300} />
+    </Flex>
+  );
 };
 
 export default SplineIcon;
