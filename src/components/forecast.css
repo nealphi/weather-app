@@ -28,10 +28,11 @@
 }
 
 .description {
+  font-size: 12px;
   cursor: inherit;
   flex: 1 1;
   margin-right: 15px;
-  text-align: right;
+  text-align: left;
 }
 
 .min-max {
