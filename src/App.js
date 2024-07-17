@@ -79,12 +79,12 @@ function App() {
         )}
         {currentWeather && currentWeather.weather[0].icon === "03d" && (
           <SplineIcon
-            url={"https://prod.spline.design/MRq-3ZQ30ZB0yPHo/scene.splinecode"}
+            url={"https://prod.spline.design/wtyat8P1YOVVkmI3/scene.splinecode"  }
           />
         )}
         {currentWeather && currentWeather.weather[0].icon === "04d" && (
           <SplineIcon
-            url={"https://prod.spline.design/MRq-3ZQ30ZB0yPHo/scene.splinecode"}
+            url={"https://prod.spline.design/wtyat8P1YOVVkmI3/scene.splinecode" }
           />
         )}
         {currentWeather && currentWeather.weather[0].icon === "03n" && (
@@ -139,7 +139,7 @@ function App() {
         )}
         {currentWeather && currentWeather.weather[0].icon === "50d" && (
           <SplineIcon
-            url={"https://prod.spline.design/MRq-3ZQ30ZB0yPHo/scene.splinecode"}
+            url={"https://prod.spline.design/wtyat8P1YOVVkmI3/scene.splinecode"  }
           />
         )}
         {currentWeather && currentWeather.weather[0].icon === "50n" && (

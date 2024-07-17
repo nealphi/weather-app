@@ -23,8 +23,6 @@ const Search = ({ onSearchChange }) => {
         };
       });
   };
-
-
   const handleOnChange = (searchData) => {
     setSearch(searchData);
     onSearchChange(searchData);
@@ -38,7 +36,9 @@ const Search = ({ onSearchChange }) => {
         value={search}
         onChange={handleOnChange}
         loadOptions={loadOptions}
-        opt
+        additional={{
+          page: 1,
+        }}
       />
     </Box>
   );
