@@ -43,8 +43,11 @@ function App() {
   }, []);
 
   return (
-    <Box className="App">
-      <Search onSearchChange={handleOnSearchChange} />
+    <Box className="App"   bgColor={
+          currentWeather && currentWeather.weather[0].icon.includes("n")
+            ? "#191D26"
+            : "#ADB7C6"
+        }>
 
       <Box
         className="Weather"
@@ -55,6 +58,8 @@ function App() {
             : "#ADB7C6"
         }
       >
+              <Search onSearchChange={handleOnSearchChange} />
+
         {currentWeather && <CurrentWeather data={currentWeather} />}
 
         {currentWeather && currentWeather.weather[0].icon === "01d" && (

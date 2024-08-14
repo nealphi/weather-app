@@ -1,22 +1,18 @@
 
-* {
-  box-sizing: border-box;
-}
 
 .App {
   display: flex;
+  height: 100%;
   flex-direction: column;
   z-index: -10;
   align-items: center;
   justify-content: center;
-  margin: 30px;
-
+  align-content: center;
+  padding: 20px;
 
 }
 
 .SearchInput{
-  min-width: 350px;
-  width: 30%;
 margin-bottom: 30px;
 }
 
@@ -24,10 +20,10 @@ margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center!important;
-  min-width: 350px;
-  min-height: 700px;
+  width: 390px;
   color: rgb(113, 113, 113);
-  border-radius: 35px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 15px;
   padding: 30px;
 }
 

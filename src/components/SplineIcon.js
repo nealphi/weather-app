@@ -4,7 +4,7 @@ import React from "react";
 
 const SplineIcon = ({ url }) => {
   return (
-    <Flex mt={40}>
+    <Flex >
       <Spline scene={url} width={300} height={300} />
     </Flex>
   );
